@@ -14,7 +14,7 @@ import (
 	"github.com/sclevine/forge/engine"
 )
 
-const LatestStack = "cloudfoundry/cflinuxfs2:latest"
+const LatestStack = "heroku/heroku:16-build"
 
 type UI interface {
 	Prompt(prompt string) string
