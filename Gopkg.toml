@@ -39,9 +39,10 @@ ignored = [
   name = "github.com/nu7hatch/gouuid"
   branch = "master"
 
-[[constraint]]
+[[override]]
   name = "github.com/sclevine/forge"
-  branch = "master"
+  source = "https://github.com/jkutner/forge"
+  branch = "heroku"
 
 # Test
 

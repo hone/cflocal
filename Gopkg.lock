@@ -256,7 +256,7 @@
   revision = "839d9e913e063e28dfd0e6c7b7512793e0a48be9"
 
 [[projects]]
-  branch = "master"
+  branch = "heroku"
   name = "github.com/sclevine/forge"
   packages = [
     ".",
@@ -266,7 +266,8 @@
     "internal",
     "term"
   ]
-  revision = "1173b46a3c880e09c173b1f83f39542b7b6e1c5d"
+  revision = "ec3109b5bd38f308bec979fd6dcd9eda1b7ffe3a"
+  source = "https://github.com/jkutner/forge"
 
 [[projects]]
   name = "github.com/vito/go-interact"
@@ -334,6 +335,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9074ad1bce552bc48ecf982bbf8f73ac4f0477b0d6c601c37ebe77877e6a0107"
+  inputs-digest = "c58f9503d6e8d3099a6daa3581408cff8c52c21f041601bb708abe682d8da509"
   solver-name = "gps-cdcl"
   solver-version = 1
