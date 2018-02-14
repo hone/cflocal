@@ -90,7 +90,7 @@ func (r *Run) Run(args []string) error {
 	droplet := engine.NewStream(dropletFile, dropletSize)
 	defer droplet.Close()
 
-	lifecycle, err := r.Stager.DownloadTar("/tmp/lifecycle", LatestStack)
+	lifecycle, err := r.Stager.DownloadTar("/lifecycle", LatestStack)
 	if err != nil {
 		return err
 	}

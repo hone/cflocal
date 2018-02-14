@@ -44,7 +44,7 @@ func (e *Export) Run(args []string) error {
 	droplet := engine.NewStream(dropletFile, dropletSize)
 	defer droplet.Close()
 
-	lifecycle, err := e.Stager.DownloadTar("/tmp/lifecycle", LatestStack)
+	lifecycle, err := e.Stager.DownloadTar("/lifecycle", LatestStack)
 	if err != nil {
 		return err
 	}
