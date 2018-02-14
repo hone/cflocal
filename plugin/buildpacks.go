@@ -4,48 +4,43 @@ import "github.com/sclevine/forge"
 
 var SystemBuildpacks forge.Buildpacks = []forge.Buildpack{
 	{
-		Name:       "staticfile_buildpack",
-		URL:        "https://github.com/cloudfoundry/staticfile-buildpack/releases/download/v{{.}}/staticfile-buildpack-v{{.}}.zip",
-		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/staticfile-buildpack",
-	},
-	{
-		Name:       "java_buildpack",
-		URL:        "https://github.com/cloudfoundry/java-buildpack/releases/download/v{{.}}/java-buildpack-v{{.}}.zip",
-		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/java-buildpack",
-	},
-	{
 		Name:       "ruby_buildpack",
-		URL:        "https://github.com/cloudfoundry/ruby-buildpack/releases/download/v{{.}}/ruby-buildpack-v{{.}}.zip",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/ruby.tgz",
 		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/ruby-buildpack",
 	},
 	{
-		Name:       "nodejs_buildpack",
-		URL:        "https://github.com/cloudfoundry/nodejs-buildpack/releases/download/v{{.}}/nodejs-buildpack-v{{.}}.zip",
-		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/nodejs-buildpack",
+		Name:       "java_buildpack",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/java.tgz",
+		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/java-buildpack",
 	},
 	{
 		Name:       "go_buildpack",
-		URL:        "https://github.com/cloudfoundry/go-buildpack/releases/download/v{{.}}/go-buildpack-v{{.}}.zip",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/go.tgz",
 		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/go-buildpack",
 	},
 	{
 		Name:       "python_buildpack",
-		URL:        "https://github.com/cloudfoundry/python-buildpack/releases/download/v{{.}}/python-buildpack-v{{.}}.zip",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/python.tgz",
 		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/python-buildpack",
 	},
 	{
 		Name:       "php_buildpack",
-		URL:        "https://github.com/cloudfoundry/php-buildpack/releases/download/v{{.}}/php-buildpack-v{{.}}.zip",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/php.tgz",
 		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/php-buildpack",
 	},
 	{
-		Name:       "dotnet_core_buildpack",
-		URL:        "https://github.com/cloudfoundry/dotnet-core-buildpack/releases/download/v{{.}}/dotnet-core-buildpack-v{{.}}.zip",
-		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/dotnet-core-buildpack",
+		Name:       "scala_buildpack",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/scala.tgz",
+		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/binary-buildpack",
 	},
 	{
-		Name:       "binary_buildpack",
-		URL:        "https://github.com/cloudfoundry/binary-buildpack/releases/download/v{{.}}/binary-buildpack-v{{.}}.zip",
+		Name:       "gradle_buildpack",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/gradle.tgz",
 		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/binary-buildpack",
+	},
+	{
+		Name:       "nodejs_buildpack",
+		URL:        "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/nodejs.tgz",
+		VersionURL: "https://raw.githubusercontent.com/sclevine/cflocal-data/master/versions/nodejs-buildpack",
 	},
 }
