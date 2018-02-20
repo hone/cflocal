@@ -266,7 +266,7 @@
     "internal",
     "term"
   ]
-  revision = "ec3109b5bd38f308bec979fd6dcd9eda1b7ffe3a"
+  revision = "9bb318bacd3a36e3d2a683ca69fb38ead8ff83fc"
   source = "https://github.com/jkutner/forge"
 
 [[projects]]
